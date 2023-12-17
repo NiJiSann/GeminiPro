@@ -12,6 +12,7 @@ model = genai.GenerativeModel('gemini-pro')
 c = model.start_chat(history=[])
 webhook_endpoint = ''
 
+
 def ask(prompt):
     response = model.generate_content(prompt)
     return response.text
